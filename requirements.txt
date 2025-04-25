@@ -1,0 +1,9 @@
+openpyxl
+reportlab
+qrcode
+pillow
+smtplib3
+selenium
+pyautogui
+
+
