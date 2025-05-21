@@ -1,15 +1,18 @@
-import mysql.connector
+
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
 import qrcode
 import os
 
 
-conn = mysql.connector.connect(
-    host="localhost",
-    user="root",
+import pymysql
+from openpyxl import Workbook
+
+conn = pymysql.connect(
+    host="",
+    user="",
     password="",
-    database="cobranca"
+    database=""
 )
 cursor = conn.cursor()
 

@@ -11,7 +11,7 @@ ws = wb.active
 for row in ws.iter_rows(min_row=2, values_only=True):
     nome, email, telefone, endereco = row
 
-    driver.get("http://localhost/projeto_cobranca/frontend/cadastro_cliente.php")
+    driver.get("../frontend/cadastro_cliente.php")
 
     time.sleep(1) 
 

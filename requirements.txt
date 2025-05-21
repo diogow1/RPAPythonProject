@@ -2,7 +2,7 @@ openpyxl
 reportlab
 qrcode
 pillow
-smtplib3
+#smtplib3
 selenium
 pyautogui
 

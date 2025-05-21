@@ -1,15 +1,14 @@
-import mysql.connector
+import pymysql
 from openpyxl import Workbook
 
-conn = mysql.connector.connect(
-    host="localhost",
-    user="root",
+conn = pymysql.connect(
+    host="",
+    user="",
     password="",
-    database="cobranca"
+    database=""
 )
 cursor = conn.cursor()
 
-# Consulta
 cursor.execute("""
     SELECT c.nome, c.email, c.telefone,  f.valor, f.vencimento, f.status
     FROM faturas f

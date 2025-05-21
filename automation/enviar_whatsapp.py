@@ -11,7 +11,7 @@ aba = planilha.active
 
 webbrowser.open('https://web.whatsapp.com/')
 sleep(10)
-#input("Escaneie o QR Code e pressione ENTER para continuar...")
+#input("Pressione ENTER para continuar...")
 
 for i, linha in enumerate(aba.iter_rows(min_row=2, values_only=True), start=2):
     nome, email, telefone, valor, vencimento, status = linha
@@ -19,7 +19,7 @@ for i, linha in enumerate(aba.iter_rows(min_row=2, values_only=True), start=2):
     if status == "ENVIADO":
         continue
 
-    mensagem = f"Olá {nome}, seu boleto vence no dia {vencimento.strftime('%d/%m/%Y')}. Favor pagar no link https://www.link_do_pagamento.com"
+    mensagem = f"Olá {nome}, seu boleto vence no dia {vencimento.strftime('%d/%m/%Y')}. Favor pagar no link ..."
     link = f"https://web.whatsapp.com/send?phone=55{telefone}&text=" + urllib.parse.quote(mensagem)
     
     webbrowser.open(link)

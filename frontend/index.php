@@ -1,8 +1,7 @@
 <?php
-// Conectar ao banco de dados
+
 include('../backend/conexao.php'); 
 
-// Buscar clientes e faturas
 $sql = "SELECT f.id, c.nome, c.email, f.valor, f.vencimento, f.status 
         FROM clientes c
         JOIN faturas f ON c.id = f.cliente_id";

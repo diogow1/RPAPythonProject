@@ -1,8 +1,8 @@
 <?php
-$host = "localhost";
-$usuario = "root";
+$host = "";
+$usuario = "";
 $senha = "";
-$banco = "cobranca";
+$banco = "";
 
 $conn = new mysqli($host, $usuario, $senha, $banco);
 
